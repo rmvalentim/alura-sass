@@ -31,6 +31,6 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  @include borda-arredondada;
-  @extend %sombra-padrao;
+  @include border-radius(10px);
+  @include box-shadow(black 0 2px 5px);
 }
