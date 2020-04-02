@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
 }
 
+.plataformas-sprite, .plataformas-logo-android, .plataformas-logo-apple, .plataformas-logo-blackberry, .plataformas-logo-windows {
+  background-image: url('../imagens/plataformas-s827e4db9cd.png');
+  background-repeat: no-repeat;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -854,29 +859,37 @@ header .container {
   padding: 0;
 }
 
+.plataformas-logo-android {
+  background-position: 0 0;
+}
+
+.plataformas-logo-apple {
+  background-position: 0 -65px;
+}
+
+.plataformas-logo-blackberry {
+  background-position: 0 -131px;
+}
+
+.plataformas-logo-windows {
+  background-position: 0 -181px;
+}
+
 .plataformas li {
   display: inline-block;
-  width: 50px;
-  height: 60px;
   text-indent: -9999px;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center;
   margin: 1em 1.5em 0 0;
+  vertical-align: middle;
 }
 
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
-}
-
-.plataformas li:nth-child(2) {
-  background-image: url(../imagens/logo-android.png);
-}
-
-.plataformas li:nth-child(3) {
-  background-image: url(../imagens/logo-windows.png);
+.plataformas li:nth-child(-n+3) {
+  width: 50px;
+  height: 60px;
 }
 
 .plataformas li:nth-child(4) {
-  background-image: url(../imagens/logo-blackberry.png);
+  width: 65px;
+  height: 45px;
 }
